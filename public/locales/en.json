@@ -1,0 +1,118 @@
+{
+    "Hero": {
+        "title": "Automation & Marketing. More Sales. Faster Support.",
+        "subtitle": "WAFE is a smart automation & marketing agent, specifically designed for e-commerce outlets to manage orders, respond to customers, and follow up automatically.",
+        "ctaPrimary": "Start Now",
+        "ctaSecondary": "Book a Demo"
+    },
+    "Navigation": {
+        "home": "Home",
+        "features": "Features",
+        "howItWorks": "How it Works",
+        "pricing": "Pricing",
+        "contact": "Contact Us"
+    },
+    "ProblemSolution": {
+        "title": "Selling on WhatsApp is easy... but without automation, it becomes exhausting.",
+        "solution": "WAFE handles all of this automatically — 24/7.",
+        "painPoints": [
+            "Delayed responses lose orders",
+            "Repeating the same questions daily",
+            "Not following up on abandoned carts",
+            "Heavy pressure on the support team"
+        ]
+    },
+    "Features": {
+        "title": "Core Features",
+        "items": [
+            {
+                "title": "Smart Automated Responses",
+                "desc": "Instant replies to FAQs, prices, availability, and policies."
+            },
+            {
+                "title": "Order & Abandoned Cart Follow-up",
+                "desc": "Automatically recover lost sales."
+            },
+            {
+                "title": "Smart Conversation Routing",
+                "desc": "Transfer complex cases to the human team when needed."
+            }
+        ]
+    },
+    "HowItWorks": {
+        "title": "How WAFE Works",
+        "description": "Simple setup. No technical complexity.",
+        "steps": [
+            "Connect WhatsApp Business",
+            "Activate ready-made automation scenarios",
+            "Replies, sells, and follows up automatically"
+        ],
+        "cta": "Know How It Works"
+    },
+    "TargetAudience": {
+        "title": "Who is this for?",
+        "items": [
+            "E-commerce Stores",
+            "Instagram & WhatsApp Sellers",
+            "Small & Medium Enterprises"
+        ]
+    },
+    "Pricing": {
+        "title": "Pricing: Clear plans. No complexity. WhatsApp automation only.",
+        "notes": [
+            "No long-term commitment",
+            "Cancel anytime",
+            "Service limited to WhatsApp currently"
+        ],
+        "plans": {
+            "starter": {
+                "name": "Starter Plan",
+                "features": [
+                    "WhatsApp automation",
+                    "Auto-replies",
+                    "Basic follow-up",
+                    "Monthly usage limit"
+                ]
+            },
+            "pro": {
+                "name": "Pro Plan (Most Popular)",
+                "features": [
+                    "All basic features",
+                    "Advanced scenarios",
+                    "Smart conversation routing",
+                    "Higher usage limits",
+                    "Priority support"
+                ]
+            }
+        }
+    },
+    "Contact": {
+        "title": "Book a Demo",
+        "subtitle": "See how WAFE works with your store.",
+        "trustText": "No commitment. No pressure.",
+        "fields": {
+            "storeName": "Store Name",
+            "personName": "Contact Person",
+            "whatsapp": "WhatsApp Number",
+            "orders": "Monthly Orders (Optional)",
+            "submit": "Book Demo"
+        }
+    },
+    "FAQ": {
+        "title": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "Is WAFE directly linked to WhatsApp?",
+                "answer": "Yes, the connection is securely made through official WhatsApp channels."
+            },
+            {
+                "question": "Can I talk manually to customers?",
+                "answer": "Absolutely, you can intervene at any moment and follow conversations manually."
+            },
+            {
+                "question": "Can I upgrade later?",
+                "answer": "Yes, you can upgrade or change your plan at any time easily."
+            }
+        ]
+    }
+}
