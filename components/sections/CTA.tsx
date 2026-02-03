@@ -22,10 +22,10 @@ export function CTA({ dict }: { dict: any }) {
                         className="relative z-10 max-w-3xl mx-auto"
                     >
                         <h2 className="text-4xl md:text-6xl font-semibold text-white mb-12 tracking-tight leading-tight">
-                            {dict.Hero.title.includes("حوّل") ? dict.Hero.title : "حوّل واتساب إلى أقوى قناة مبيعات لديك."}
+                            {dict.CTA.title}
                         </h2>
                         <Button size="lg" className="rounded-2xl px-12 h-16 bg-white text-action hover:bg-neutral-50 transition-all text-xl font-bold shadow-2xl shadow-black/10">
-                            ابدأ بأتمتة واتساب
+                            {dict.CTA.button}
                         </Button>
                     </motion.div>
 

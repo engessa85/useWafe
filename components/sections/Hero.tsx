@@ -11,108 +11,101 @@ export function Hero({ lang, dict }: { lang: "en" | "ar", dict: any }) {
     const isRtl = lang === 'ar';
 
     return (
-        <section className="relative pt-32 pb-16 md:pt-48 overflow-hidden">
-            <Container>
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-20">
-                    {/* Left Side: Big Title like "Store." */}
+        <section className="relative pt-32 pb-16 md:pt-48 overflow-hidden bg-white">
+            {/* Ambient Background Polish */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden">
+                <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-action/5 rounded-full blur-[120px] opacity-60" />
+                <div className="absolute bottom-[-10%] left-[10%] w-[600px] h-[400px] bg-accent/5 rounded-full blur-[100px] opacity-40" />
+            </div>
+
+            <Container className="relative">
+                <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+                    {/* Tagline / Brand Anchor */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="mb-8"
+                    >
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-black/5 text-secondary text-[11px] font-bold tracking-widest uppercase">
+                            {dict.Hero.badge}
+                        </span>
+                    </motion.div>
+
+                    {/* Main Headline */}
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                        className="text-5xl md:text-8xl font-semibold tracking-tighter text-foreground leading-[1] mb-10"
+                    >
+                        {dict.Hero.title}
+                    </motion.h1>
+
+                    {/* Styled Subtitle */}
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                        className="text-xl md:text-2xl text-secondary font-medium leading-relaxed max-w-2xl mb-12 opacity-80"
+                    >
+                        {dict.Hero.subtitle}
+                    </motion.p>
+
+                    {/* Centered CTAs */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="max-w-2xl"
+                        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                        className="flex flex-col sm:flex-row items-center gap-6 mb-24"
                     >
-                        <h1 className="text-7xl md:text-[100px] font-semibold tracking-tighter text-foreground leading-[0.9] mb-6">
-                            useWafe<span className="text-secondary opacity-40">.</span>
-                        </h1>
-                        <p className="text-2xl md:text-3xl text-secondary font-medium leading-tight max-w-lg">
-                            {dict.Hero.title}
-                        </p>
-                    </motion.div>
-
-                    {/* Right Side: CTA/Subtitle */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                        className={`max-w-xs ${isRtl ? 'md:text-left' : 'md:text-right'} pb-2`}
-                    >
-                        <p className="text-lg font-semibold text-foreground mb-6 leading-snug italic opacity-80">
-                            {dict.Hero.subtitle}
-                        </p>
-                        <div className={`flex items-center gap-6 ${isRtl ? 'md:justify-start' : 'md:justify-end'}`}>
-                            <Link href={`/${lang}#contact`}>
-                                <Button size="lg" className="rounded-full px-8 bg-action text-white hover:bg-action/90 shadow-xl shadow-action/20 border-none transition-all hover:scale-105 active:scale-95">
-                                    {dict.Hero.ctaPrimary}
-                                </Button>
-                            </Link>
-                            <Link href={`/${lang}#pricing`} className="group flex items-center gap-1 text-action font-medium hover:underline">
-                                {dict.Hero.ctaSecondary}
-                                <ChevronRight className={`w-4 h-4 transition-transform group-hover:translate-x-1 ${isRtl ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
-                            </Link>
-                        </div>
+                        <Link href={`/${lang}#contact`}>
+                            <Button size="lg" className="rounded-full px-10 py-7 h-auto bg-action text-white hover:bg-action/90 shadow-2xl shadow-action/25 border-none transition-all hover:scale-105 active:scale-95 text-lg font-bold">
+                                {dict.Hero.ctaPrimary}
+                            </Button>
+                        </Link>
+                        <Link href={`/${lang}#pricing`} className="group flex items-center gap-2 text-action font-semibold hover:underline text-lg">
+                            {dict.Hero.ctaSecondary}
+                            <ChevronRight className={`w-5 h-5 transition-transform group-hover:translate-x-1 ${isRtl ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
+                        </Link>
                     </motion.div>
                 </div>
 
-                {/* Visual Element - Premium Dashboard Mockup */}
+                {/* Main Visual Component */}
                 <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-                    className="relative group mr-[-5%] ml-[-5%] md:mx-0"
+                    initial={{ opacity: 0, scale: 0.98, y: 30 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ duration: 1.4, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    className="relative max-w-6xl mx-auto"
                 >
-                    <div className="relative rounded-apple-lg bg-white shadow-[0_20px_80px_rgba(0,0,0,0.1)] overflow-hidden border border-black/3">
-                        <div className="absolute inset-0 bg-linear-to-br from-white via-white/50 to-neutral-50/50" />
+                    <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-apple-lg overflow-hidden bg-white shadow-[0_40px_120px_rgba(0,0,0,0.08)] border border-black/5 group">
+                        <Image
+                            src="/hero-visual.png"
+                            alt="Turn Chats Into Sales Visual"
+                            fill
+                            priority
+                            className="object-cover transition-transform duration-1000 group-hover:scale-[1.01]"
+                        />
 
-                        {/* Mock Browser Header */}
-                        <div className="relative flex h-14 items-center border-b border-black/3 px-8 bg-neutral-50/30 backdrop-blur-md">
-                            <div className="flex gap-2">
-                                <div className="h-3 w-3 rounded-full bg-[#FF5F56] opacity-80" />
-                                <div className="h-3 w-3 rounded-full bg-[#FFBD2E] opacity-80" />
-                                <div className="h-3 w-3 rounded-full bg-[#27C93F] opacity-80" />
-                            </div>
-                            <div className="mx-auto text-[11px] font-medium text-secondary tracking-widest uppercase opacity-40">useWafe Business Automation</div>
-                        </div>
+                        {/* Interactive Depth Layers */}
+                        <div className="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-white/20 pointer-events-none" />
 
-                        {/* Dashboard Mockup Content */}
-                        <div className="relative grid grid-cols-1 md:grid-cols-4 h-[600px] overflow-hidden">
-                            {/* Sidebar */}
-                            <div className="hidden md:block border-r border-black/3 bg-neutral-50/20 p-8">
-                                <div className="relative w-8 h-8 rounded-lg overflow-hidden mb-12 border border-black/5 opacity-80">
-                                    <Image src="/logo.png" alt="Mini Logo" fill className="object-contain" />
+                        {/* Floating Sales Toast - Centered Context */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0] }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                            className="absolute top-1/4 right-[10%] hidden md:block"
+                        >
+                            <div className="bg-white/90 backdrop-blur-xl border border-white/20 p-5 rounded-3xl shadow-2xl flex items-center gap-4 transition-transform hover:scale-105">
+                                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-accent">
+                                    <div className="w-4 h-4 rounded-full bg-accent shadow-[0_0_15px_#25D366]" />
                                 </div>
-                                {[1, 2, 3, 4].map(i => (
-                                    <div key={i} className={`h-12 w-full rounded-2xl mb-4 transition-all ${i === 1 ? 'bg-white shadow-md' : 'bg-transparent opacity-30'}`} />
-                                ))}
-                            </div>
-
-                            {/* Main Content Area */}
-                            <div className="col-span-3 p-10 bg-white structure-grid flex flex-col gap-8">
-                                <div className="flex justify-between items-center mb-4">
-                                    <div className="h-10 w-48 rounded-2xl bg-black/3" />
-                                    <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
-                                        <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-2 gap-8">
-                                    <div className="h-40 rounded-[28px] bg-neutral-50 border border-black/2 p-6 shadow-xs scale-100 transition-transform group-hover:scale-[1.02] duration-700">
-                                        <div className="h-4 w-24 bg-black/5 rounded-full mb-4" />
-                                        <div className="h-8 w-32 bg-black/8 rounded-full" />
-                                    </div>
-                                    <div className="h-40 rounded-[28px] bg-neutral-50 border border-black/2 p-6 shadow-xs scale-100 transition-transform group-hover:scale-[1.02] duration-700 delay-100">
-                                        <div className="h-4 w-24 bg-black/5 rounded-full mb-4" />
-                                        <div className="h-8 w-16 bg-black/8 rounded-full" />
-                                    </div>
-                                </div>
-
-                                <div className="flex-1 rounded-[28px] border-2 border-dashed border-black/3 bg-neutral-50/50 flex flex-col items-center justify-center gap-4 group/inner">
-                                    <div className="w-16 h-16 rounded-3xl bg-white shadow-lg flex items-center justify-center transition-transform group-hover/inner:rotate-12">
-                                        <div className="w-6 h-6 border-2 border-action rounded-md" />
-                                    </div>
-                                    <p className="text-secondary text-sm font-medium opacity-40 uppercase tracking-widest">Connect your WhatsApp to start</p>
+                                <div>
+                                    <div className="text-[10px] uppercase tracking-[0.2em] font-black text-secondary opacity-40">Live Sales</div>
+                                    <div className="text-lg font-bold text-foreground">$1,240.00</div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </motion.div>
             </Container>

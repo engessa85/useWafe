@@ -1,5 +1,10 @@
 {
+    "General": {
+        "brandName": "useWafe",
+        "developedBy": "Developed for professional excellence."
+    },
     "Hero": {
+        "badge": "Introducing useWafe.",
         "title": "Automation & Marketing. More Sales. Faster Support.",
         "subtitle": "WAFE is a smart automation & marketing agent, specifically designed for e-commerce outlets to manage orders, respond to customers, and follow up automatically.",
         "ctaPrimary": "Start Now",
@@ -14,6 +19,7 @@
     },
     "ProblemSolution": {
         "title": "Selling on WhatsApp is easy... but without automation, it becomes exhausting.",
+        "solutionTitle": "The Solution",
         "solution": "WAFE handles all of this automatically — 24/7.",
         "painPoints": [
             "Delayed responses lose orders",
@@ -42,6 +48,7 @@
     "HowItWorks": {
         "title": "How WAFE Works",
         "description": "Simple setup. No technical complexity.",
+        "roiText": "ROI Boosted",
         "steps": [
             "Connect WhatsApp Business",
             "Activate ready-made automation scenarios",
@@ -59,6 +66,7 @@
     },
     "Pricing": {
         "title": "Pricing: Clear plans. No complexity. WhatsApp automation only.",
+        "popularBadge": "Most Popular",
         "notes": [
             "No long-term commitment",
             "Cancel anytime",
@@ -89,6 +97,8 @@
     "Contact": {
         "title": "Book a Demo",
         "subtitle": "See how WAFE works with your store.",
+        "directContact": "Or contact us directly",
+        "whatsappButton": "Contact us on WhatsApp",
         "trustText": "No commitment. No pressure.",
         "fields": {
             "storeName": "Store Name",
@@ -110,9 +120,17 @@
                 "answer": "Absolutely, you can intervene at any moment and follow conversations manually."
             },
             {
+                "question": "Can I talk manually to customers?",
+                "answer": "Absolutely, you can intervene at any moment and follow conversations manually."
+            },
+            {
                 "question": "Can I upgrade later?",
                 "answer": "Yes, you can upgrade or change your plan at any time easily."
             }
         ]
+    },
+    "CTA": {
+        "title": "Turn WhatsApp into your most powerful sales channel.",
+        "button": "Start Automating WhatsApp"
     }
 }

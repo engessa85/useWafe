@@ -64,11 +64,11 @@ export function ContactForm({ dict }: { dict: any }) {
 
                     <div className="mt-16 text-center space-y-6">
                         <div className="flex flex-col items-center gap-4">
-                            <p className="text-secondary text-sm font-semibold uppercase tracking-widest opacity-40">أو تواصل معنا مباشرة</p>
-                            <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+                            <p className="text-secondary text-sm font-semibold uppercase tracking-widest opacity-40">{dict.Contact.directContact}</p>
+                            <a href="https://wa.me/201014161748" target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline" className="rounded-full px-8 h-14 border-accent/20 text-accent hover:bg-accent/5 transition-all gap-3 font-bold">
                                     <MessageCircle className="w-5 h-5" />
-                                    تواصل معنا عبر واتساب
+                                    {dict.Contact.whatsappButton}
                                 </Button>
                             </a>
                         </div>

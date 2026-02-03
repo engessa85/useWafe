@@ -50,7 +50,7 @@ export function ProblemSolution({ lang, dict }: { lang: "en" | "ar", dict: any }
                                 <div className="h-14 w-14 rounded-2xl bg-accent/10 flex items-center justify-center">
                                     <CheckCircle2 className="w-8 h-8" />
                                 </div>
-                                <h3 className="text-3xl font-semibold text-foreground tracking-tight">The Solution</h3>
+                                <h3 className="text-3xl font-semibold text-foreground tracking-tight">{dict.ProblemSolution.solutionTitle}</h3>
                             </div>
                             <p className="text-2xl text-secondary font-medium leading-relaxed">
                                 {dict.ProblemSolution.solution}

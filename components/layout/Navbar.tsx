@@ -16,12 +16,12 @@ export async function Navbar({ lang }: { lang: "en" | "ar" }) {
                     <div className="relative w-10 h-10 overflow-hidden rounded-xl shadow-sm border border-black/5 transition-transform group-hover:scale-105">
                         <Image
                             src="/logo.png"
-                            alt="useWafe Logo"
+                            alt={`${dict.General.brandName} Logo`}
                             fill
                             className="object-contain"
                         />
                     </div>
-                    <span className="text-xl font-semibold tracking-tight text-foreground">useWafe</span>
+                    <span className="text-xl font-semibold tracking-tight text-foreground">{dict.General.brandName}</span>
                 </Link>
 
                 {/* Desktop Navigation */}

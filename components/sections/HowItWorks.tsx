@@ -105,7 +105,7 @@ export function HowItWorks({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                                         <div className="w-10 h-10 rounded-xl bg-action flex items-center justify-center shadow-lg shadow-blue-500/20">
                                             <TrendingUp className="text-white w-6 h-6" />
                                         </div>
-                                        <div className="flex-1 text-sm font-bold text-foreground">ROI Boosted</div>
+                                        <div className="flex-1 text-sm font-bold text-foreground">{dict.HowItWorks.roiText}</div>
                                     </div>
                                 </motion.div>
                             </div>

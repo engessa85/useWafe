@@ -46,7 +46,7 @@ export function Pricing({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                             <Card className={`relative h-full flex flex-col ${item.popular ? 'border-action/20 ring-1 ring-action/10 scale-105 z-10' : ''}`}>
                                 {item.popular && (
                                     <div className="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-action text-white font-bold px-6 py-1.5 rounded-full text-xs tracking-widest uppercase shadow-xl shadow-action/20">
-                                        Most Popular
+                                        {dict.Pricing.popularBadge}
                                     </div>
                                 )}
                                 <div className="mb-10">
