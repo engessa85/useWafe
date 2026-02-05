@@ -65,7 +65,7 @@ export function ContactForm({ dict }: { dict: any }) {
                     <div className="mt-16 text-center space-y-6">
                         <div className="flex flex-col items-center gap-4">
                             <p className="text-secondary text-sm font-semibold uppercase tracking-widest opacity-40">{dict.Contact.directContact}</p>
-                            <a href="https://wa.me/00966550623623" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/966550623623" target="_blank" rel="noopener noreferrer">
                                 <Button variant="outline" className="rounded-full px-8 h-14 border-accent/20 text-accent hover:bg-accent/5 transition-all gap-3 font-bold cursor-pointer">
                                     <MessageCircle className="w-5 h-5" />
                                     {dict.Contact.whatsappButton}
