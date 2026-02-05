@@ -146,5 +146,10 @@
     "CTA": {
         "title": "Turn WhatsApp into your most powerful sales channel.",
         "button": "Start Automating WhatsApp"
+    },
+    "Footer": {
+        "description": "Wafe is an intelligent automation and marketing agent, purpose-built for e-commerce businesses to organize orders, respond to customers, and follow up automatically—without the effort.",
+        "visionTitle": "Our Vision",
+        "vision": "To make selling on WhatsApp simpler, smarter, and more human—without losing the personal touch."
     }
 }

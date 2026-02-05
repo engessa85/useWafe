@@ -20,7 +20,14 @@ export async function Footer({ lang }: { lang: "en" | "ar" }) {
                         </span>
                     </Link>
                     <p className="mt-6 max-w-xs text-secondary font-medium leading-relaxed">
-                        {dict.Hero.subtitle}
+                        {dict.Footer.description}
+                    </p>
+                </div>
+
+                <div>
+                    <h3 className="mb-6 font-semibold text-foreground uppercase text-[10px] opacity-40 tracking-widest">{dict.Footer.visionTitle}</h3>
+                    <p className="text-secondary font-medium leading-relaxed opacity-80">
+                        {dict.Footer.vision}
                     </p>
                 </div>
 
