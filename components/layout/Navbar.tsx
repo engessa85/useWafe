@@ -42,9 +42,16 @@ export async function Navbar({ lang }: { lang: "en" | "ar" }) {
 
                 <div className="flex items-center gap-4">
                     <LanguageSwitcher />
-                    <Button variant="primary" size="sm" className="hidden sm:flex">
-                        {dict.Hero.ctaPrimary}
-                    </Button>
+
+                    <Link
+                        href="https://wa.me/966550623623"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Button variant="primary" size="sm" className="hidden sm:flex cursor-pointer">
+                            {dict.Hero.begineButton}
+                        </Button>
+                    </Link>
                 </div>
             </Container>
         </nav>
