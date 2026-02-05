@@ -57,11 +57,20 @@
         "cta": "Know How It Works"
     },
     "TargetAudience": {
-        "title": "Who is this for?",
+        "title": "Who Is This For?",
         "items": [
-            "E-commerce Stores",
-            "Instagram & WhatsApp Sellers",
-            "Small & Medium Enterprises"
+            {
+                "title": "E-commerce Stores",
+                "desc": "If you run an online store and receive questions and orders all day, Wafe handles replies, follow-ups, and reduces the load—so you can focus on selling and growing your business."
+            },
+            {
+                "title": "Instagram & WhatsApp Sellers",
+                "desc": "Selling through DMs and messages? Wafe manages responses and follow-ups, making sure no customer is left waiting or lost."
+            },
+            {
+                "title": "Small & Medium Businesses",
+                "desc": "Limited team and growing workload? Wafe supports you by helping you sell more—without the need to expand your team."
+            }
         ]
     },
     "Pricing": {
