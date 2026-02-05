@@ -130,20 +130,16 @@
         "title": "Frequently Asked Questions",
         "items": [
             {
-                "question": "Is WAFE directly linked to WhatsApp?",
-                "answer": "Yes, the connection is securely made through official WhatsApp channels."
+                "question": "Is Wafe directly connected to WhatsApp?",
+                "answer": "Yes. Wafe connects securely through official, approved WhatsApp channels—with no complicated setup."
             },
             {
-                "question": "Can I talk manually to customers?",
-                "answer": "Absolutely, you can intervene at any moment and follow conversations manually."
+                "question": "Can I still talk to customers manually?",
+                "answer": "Absolutely. You can step in at any time to take over a conversation or continue it manually whenever needed."
             },
             {
-                "question": "Can I talk manually to customers?",
-                "answer": "Absolutely, you can intervene at any moment and follow conversations manually."
-            },
-            {
-                "question": "Can I upgrade later?",
-                "answer": "Yes, you can upgrade or change your plan at any time easily."
+                "question": "Can I upgrade my plan later?",
+                "answer": "Yes, anytime. You can upgrade or change your plan whenever your business grows."
             }
         ]
     },
