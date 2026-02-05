@@ -13,9 +13,9 @@ export async function Navbar({ lang }: { lang: "en" | "ar" }) {
             <Container className="flex h-16 items-center justify-between">
                 <Link href={`/${lang}`} className="flex items-center gap-3 group">
                     {/* Logo Image */}
-                    <div className="relative w-10 h-10 overflow-hidden rounded-xl shadow-sm border border-black/5 transition-transform group-hover:scale-105">
+                    <div className="relative w-12 h-12 overflow-hidden rounded-xl shadow-sm border border-black/5 transition-transform group-hover:scale-105">
                         <Image
-                            src="/logo.png"
+                            src="/logo_tight.png"
                             alt={`${dict.General.brandName} Logo`}
                             fill
                             className="object-contain"

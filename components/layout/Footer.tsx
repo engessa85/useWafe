@@ -12,8 +12,8 @@ export async function Footer({ lang }: { lang: "en" | "ar" }) {
             <Container className="grid gap-16 md:grid-cols-4 lg:grid-cols-5">
                 <div className="col-span-2 lg:col-span-2">
                     <Link href={`/${lang}`} className="flex items-center gap-3 group">
-                        <div className="relative w-10 h-10 overflow-hidden rounded-xl border border-black/5 transition-transform group-hover:scale-105">
-                            <Image src="/logo.png" alt={`${dict.General.brandName} Logo`} fill className="object-contain" />
+                        <div className="relative w-12 h-12 overflow-hidden rounded-xl border border-black/5 transition-transform group-hover:scale-105">
+                            <Image src="/logo_tight.png" alt={`${dict.General.brandName} Logo`} fill className="object-contain" />
                         </div>
                         <span className="text-2xl font-semibold tracking-tight text-foreground">
                             {dict.General.brandName}<span className="text-secondary opacity-40">.</span>

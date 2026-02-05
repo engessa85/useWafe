@@ -6,6 +6,10 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = {
     title: "useWafe - WhatsApp Business Automation & Marketing",
     description: "Automate your WhatsApp sales, support, and marketing with useWafe. Smart replies, cart recovery, and more.",
+    icons: {
+        icon: "/logo_tight.png",
+        apple: "/logo_tight.png",
+    },
 };
 
 export async function generateStaticParams() {
