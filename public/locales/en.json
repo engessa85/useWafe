@@ -18,14 +18,14 @@
         "contact": "Contact Us"
     },
     "ProblemSolution": {
-        "title": "Selling on WhatsApp is easy... but without automation, it becomes exhausting.",
+        "title": "Selling on WhatsApp is easy ... but without automation? It wears you out.",
         "solutionTitle": "The Solution",
-        "solution": "WAFE handles all of this automatically — 24/7.",
+        "solution": "Wafe has it covered. It replies automatically, follows up with customers, and handles orders 24/7 — effortlessly, and without customers ever feeling like they’re talking to a system.",
         "painPoints": [
-            "Delayed responses lose orders",
-            "Repeating the same questions daily",
-            "Not following up on abandoned carts",
-            "Heavy pressure on the support team"
+            "Slow replies mean lost orders",
+            "The same questions, over and over again",
+            "Abandoned carts with no follow-up",
+            "A support team under pressure, trying to keep up"
         ]
     },
     "Features": {
@@ -33,15 +33,15 @@
         "items": [
             {
                 "title": "Smart Automated Responses",
-                "desc": "Instant replies to FAQs, prices, availability, and policies."
+                "desc": "Instant responses to frequently asked questions — pricing, availability, shipping, and policies — delivered immediately, without feeling automated."
             },
             {
                 "title": "Order & Abandoned Cart Follow-up",
-                "desc": "Automatically recover lost sales."
+                "desc": "How many customers ask… then disappear? Wafe automatically follows up and recovers sales that would have otherwise been lost."
             },
             {
-                "title": "Smart Conversation Routing",
-                "desc": "Transfer complex cases to the human team when needed."
+                "title": "Intelligent Conversation Routing",
+                "desc": "Simple inquiries? Wafe handles them. Complex cases? Seamlessly routed to your team at the right time — no overload, no confusion, no lost customers."
             }
         ]
     },
