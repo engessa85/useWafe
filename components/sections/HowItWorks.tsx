@@ -29,8 +29,8 @@ export function HowItWorks({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                             {dict.HowItWorks.description}
                         </motion.p>
 
-                        <div className="space-y-10">
-                            {dict.HowItWorks.steps.map((step: string, i: number) => {
+                        <div className="space-y-12">
+                            {dict.HowItWorks.steps.map((step: { title: string, desc: string }, i: number) => {
                                 const Icons = [MessageCircle, Settings, TrendingUp];
                                 const Icon = Icons[i];
                                 return (
@@ -42,12 +42,14 @@ export function HowItWorks({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                                         transition={{ delay: i * 0.2 }}
                                         className="flex gap-8 group"
                                     >
-                                        <div className="h-14 w-14 rounded-2xl bg-white border border-black/[0.03] shadow-sm flex items-center justify-center shrink-0 text-action transition-transform group-hover:scale-110 duration-500">
+                                        <div className="h-14 w-14 rounded-2xl bg-white border border-black/[0.03] shadow-sm flex items-center justify-center shrink-0 text-action transition-all group-hover:scale-110 group-hover:bg-action group-hover:text-white duration-500">
                                             <Icon className="w-7 h-7" />
                                         </div>
-                                        <div className="pt-2">
-                                            <h3 className="text-2xl font-semibold text-foreground mb-2 group-hover:text-action transition-colors">{step}</h3>
-                                            <div className="h-1 w-0 bg-action/10 group-hover:w-full transition-all duration-700" />
+                                        <div className="pt-1">
+                                            <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-action transition-colors">{step.title}</h3>
+                                            <p className="text-secondary font-medium opacity-60 leading-relaxed max-w-sm">
+                                                {step.desc}
+                                            </p>
                                         </div>
                                     </motion.div>
                                 );
@@ -62,7 +64,6 @@ export function HowItWorks({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                         >
                             <Button size="lg" className="rounded-2xl px-10 h-14 bg-foreground text-white hover:bg-foreground/90 transition-all font-semibold">
                                 {dict.HowItWorks.cta}
-                                <ArrowRight className="ml-2 w-5 h-5" />
                             </Button>
                         </motion.div>
                     </div>

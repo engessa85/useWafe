@@ -46,15 +46,24 @@
         ]
     },
     "HowItWorks": {
-        "title": "How WAFE Works",
-        "description": "Simple setup. No technical complexity.",
+        "title": "How Wafe Works",
+        "description": "Simple setup. No complexity. No headaches.",
         "roiText": "ROI Boosted",
         "steps": [
-            "Connect WhatsApp Business",
-            "Activate ready-made automation scenarios",
-            "Replies, sells, and follows up automatically"
+            {
+                "title": "Connect WhatsApp Business",
+                "desc": "Link your account in a few easy steps, and Wafe will be ready to go within minutes."
+            },
+            {
+                "title": "Activate Automation Scenarios",
+                "desc": "Choose the workflows that fit your business—replies, follow-ups, and notifications, all pre-built and ready."
+            },
+            {
+                "title": "Wafe Replies, Sells, and Follows Up",
+                "desc": "It responds to customers, follows up until the sale is completed, while you focus on running your business."
+            }
         ],
-        "cta": "Know How It Works"
+        "cta": "See how it works →"
     },
     "TargetAudience": {
         "title": "Who Is This For?",
