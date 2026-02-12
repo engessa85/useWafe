@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "../ui/Container";
 import { getDictionary } from "@/lib/dictionary";
-import { MessageCircle, Globe, ChevronRight } from "lucide-react";
+import { MessageCircle, Globe, ChevronRight, Mail } from "lucide-react";
 
 export async function Footer({ lang }: { lang: "en" | "ar" }) {
     const dict = await getDictionary(lang);
@@ -82,6 +82,14 @@ export async function Footer({ lang }: { lang: "en" | "ar" }) {
                         >
                             <MessageCircle className="w-5 h-5 fill-white/20 group-hover:rotate-12 transition-transform" />
                             <span>{dict.Contact.whatsappButton}</span>
+                        </a>
+
+                        <a
+                            href="mailto:support@usewafe.com"
+                            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border border-black/5 text-secondary rounded-2xl font-bold transition-all hover:scale-[1.02] hover:bg-neutral-50 active:scale-95 group w-fit"
+                        >
+                            <Mail className="w-5 h-5 text-action group-hover:rotate-12 transition-transform" />
+                            <span>{dict.Contact.email}</span>
                         </a>
 
                         <div className="flex items-center gap-3 text-secondary/40 font-bold tracking-widest text-[10px]">
