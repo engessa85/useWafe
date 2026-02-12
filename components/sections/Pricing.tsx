@@ -50,7 +50,7 @@ export function Pricing({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                                     </div>
                                 )}
                                 <div className="mb-10">
-                                    <h3 className="text-xl font-semibold text-secondary mb-4 uppercase tracking-widest text-xs opacity-60">
+                                    <h3 className="text-xl font-semibold text-secondary mb-4 uppercase tracking-widest  opacity-60">
                                         {item.plan.name}
                                     </h3>
                                     <div className="flex items-baseline gap-1">
@@ -71,8 +71,8 @@ export function Pricing({ lang, dict }: { lang: "en" | "ar", dict: any }) {
                                 </ul>
 
                                 <Button
-                                    variant={item.popular ? 'primary' : 'outline'}
-                                    className={`w-full h-14 rounded-2xl text-lg font-semibold transition-all ${item.popular ? 'bg-action text-white hover:scale-[1.02]' : 'hover:bg-neutral-50'}`}
+                                    variant="primary"
+                                    className="w-full h-14 rounded-2xl text-lg font-semibold transition-all bg-action text-white hover:scale-[1.02]"
                                 >
                                     {item.plan.name.includes("احجز") || item.plan.name.includes("Book") ? dict.Hero.ctaSecondary : dict.Hero.ctaPrimary}
                                 </Button>
